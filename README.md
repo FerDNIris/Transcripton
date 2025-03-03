@@ -1,7 +1,6 @@
 # Iris Startup Lab
 ## Video to audio to speech to text AKA **Transcripton**
 
-![](https://media.tenor.com/03-xmqploKcAAAAM/futurama-bender.gif)
 
 
 ### Main Objective
@@ -23,3 +22,7 @@ The objective of this app is to create an AI Agent that helps to the company to 
     - An AI agent that could help us to get the summaries of the interviews
 - [DeepSeek R1](https://ollama.com/library/deepseek-r1) :whale:
     - The next AI agent that is goint to replace LLama3 in order to improve the result.
+
+
+Ahora un bender porque se ve bien
+![](https://media.tenor.com/03-xmqploKcAAAAM/futurama-bender.gif)
