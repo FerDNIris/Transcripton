@@ -1,0 +1,4 @@
+### Comenzando el gitignore
+.env
+/__pycache__
+/models
