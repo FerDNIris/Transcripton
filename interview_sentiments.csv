@@ -1,0 +1,19 @@
+start,end,text,speaker,neg,neu,pos,compound,sentiment_category
+1.995,2.615, ¿Cuál es su nombre?,SPEAKER_02,0.0,1.0,0.0,0.0,Neutral
+2.635,8.02,Enrique Hernández Caballero.,SPEAKER_02,0.0,1.0,0.0,0.0,Neutral
+9.881,11.823,¿Cuál es el giro de su negocio?,SPEAKER_02,0.0,1.0,0.0,0.0,Neutral
+12.243,12.764,Cabarrotes.,SPEAKER_02,0.0,1.0,0.0,0.0,Neutral
+13.244,15.846,¿Qué es lo que se le hace más difícil de tener una barrera?,SPEAKER_02,0.0,1.0,0.0,0.0,Neutral
+16.968,17.168, Nada.,SPEAKER_02,0.0,1.0,0.0,0.0,Neutral
+17.528,17.708,Nada?,SPEAKER_02,0.0,1.0,0.0,0.0,Neutral
+18.309,18.909,"Ok, muy bien.",SPEAKER_02,0.0,0.476,0.524,0.296,Positive
+19.49,21.492,¿Cómo le están pagando sus clientes actualmente?,SPEAKER_02,0.0,1.0,0.0,0.0,Neutral
+22.613,25.016,En efectivo o con tarjeta de crédito.,SPEAKER_02,0.0,1.0,0.0,0.0,Neutral
+25.937,28.219,¿Y para temas de tarjeta que terminan de utilizar?,SPEAKER_02,0.0,1.0,0.0,0.0,Neutral
+28.699,30.101,En ese momento mercado pago.,SPEAKER_01,0.0,1.0,0.0,0.0,Neutral
+30.621,32.764,"Mercado pago, ok.",SPEAKER_02,0.0,0.476,0.524,0.296,Positive
+32.964,34.666,Si tenemos más dudas podemos contactarlo.,SPEAKER_02,0.0,1.0,0.0,0.0,Neutral
+35.086,35.306,Claro.,SPEAKER_02,0.0,1.0,0.0,0.0,Neutral
+35.626,36.607,"Si, ¿cuál es su teléfono?",SPEAKER_02,0.0,1.0,0.0,0.0,Neutral
+36.628,36.607,"55, 4, 3, 7, 7, 3, 2, 3, 5.",,0.0,1.0,0.0,0.0,Neutral
+37.108,37.488,Excelente.,SPEAKER_01,0.0,1.0,0.0,0.0,Neutral

@@ -29,9 +29,16 @@ class AudioTranscription:
     def _load_models(self):
         """Carga los modelos de transcripción y diarización."""
         try:
+            #filePath = './models/models--Systran--faster-whisper-large-v2/snapshots/f0fe81560cb8b68660e564f55dd99207059c092e/model.bin'
+            filePath = 'E:/Users/1167486/Local/scripts/model_audio_to_text/Iris_streamlit_speech_to_text_main/models/models--Systran--faster-whisper-large-v2/snapshots/f0fe81560cb8b68660e564f55dd99207059c092e/model.bin'
             #model = whisperx.load_model("large-v2", self.device, compute_type=self.compute_type)
-            model = whisperx.load_model("./models", self.device, compute_type=self.compute_type)
-            diarize_model = whisperx.DiarizationPipeline(use_auth_token=self.hf_token, device=self.device)
+            model = whisperx.load_model('small', self.device, compute_type=self.compute_type)
+            #model = whisperx.load_model("./models", self.device, compute_type=self.compute_type)
+            #model = whisperx.load_model(filePath, 
+            #                            self.device, compute_type=self.compute_type)
+            diarize_model = whisperx.DiarizationPipeline(use_auth_token=self.hf_token, 
+                                                         device=self.device)
+            
             logging.info("Modelos cargados correctamente.")
             return model, diarize_model
         except Exception as e:
@@ -86,7 +93,7 @@ class AudioTranscription:
         if not result or "segments" not in result:
             logging.warning("No hay datos de transcripción para convertir a DataFrame.")
             return None
-        
+        ### Try Catch para aplicación        
         try:
             df = pd.DataFrame(result["segments"])
             df = df[["start", "end", "text", "speaker"]]

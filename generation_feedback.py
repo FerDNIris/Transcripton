@@ -41,6 +41,7 @@ class ConversationReviewer:
         - Identify the questions and give a summary for each one
         - Analyze sentiment.
         - Provide feedback for each unique speaker.
+        - Give some hidden details that you found about the interview
         Please in Spanish from Mexico
         Conversation Data:
         {conversation}

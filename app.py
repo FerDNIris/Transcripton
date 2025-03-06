@@ -60,8 +60,12 @@ def getConversation(df):
         conversation += f"{row['speaker']}: {row['text']}"
     return conversation
 
+
+
+
 ######## Now the main Title 
-st.title('Speech to text Main Analytics')
+st.title('Transcripton')
+st.header('Speech to text Main Analytics')
 #st.image(logoPath, caption='The logo', use_column_width = True)
 st.image(logoPath, caption='The logo', use_container_width = True, width=50)
 
@@ -74,6 +78,18 @@ option = st.sidebar.selectbox("Choose an option", ("Upload an audio file", "Use 
 def displayData(df):
     st.write('## Speech to text results with speaker identification')
     st.dataframe(df[['start', 'end', 'text', 'speaker']])
+
+    @st.cache_data
+    def convertToCsv(dataframe):
+        return dataframe.to_csv().encode('utf-8')
+
+    #csv= convertToCsv(df)
+    #st.download_button(
+    #    label ='Descarga el archivo en formato csv',
+    #    data = csv, 
+    #    file_name="transcripted_file.csv",
+    #    mime="text/csv"
+    #)
 
     if 'sentiment_category' not in df.columns:
         st.error("Column: 'Sentiment Analysis does not found'")

@@ -3,7 +3,7 @@
 ##### Starting the main function
 ##### Last Edition: 2025-02-25
 import pandas as pd 
-from spanish_names import 
+from spanish_names import spanishNames
 
 ### Starting the class
 #class SpeakerNameMapper:
@@ -29,11 +29,14 @@ from spanish_names import
 #        return self.df 
 
 ### Starting the new Class
+
+
 class SpeakerNameMapper:
     def __init__(self, df):
         self.df = df 
-        print(df)
         self.names = ['Paco', 'Julieta', 'Nacho']  # Nombres default
+        #self.names = spanishNames['name'].unique()
+        
 
     def find_name_in_text(self, text):
         for name in self.names:
